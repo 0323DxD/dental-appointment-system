@@ -23,10 +23,10 @@ if ($result && mysqli_num_rows($result) > 0) {
     $mail->Port = 587;
     $mail->SMTPAuth = true;
     $mail->SMTPSecure = 'tls';
-    $mail->Username = 'brosaskndrx05@gmail.com';
-    $mail->Password = 'gfka wrqs kegy dubc';
+    $mail->Username = 'trinitysmilesdc@gmail.com';
+    $mail->Password = 'mzfg ydhl zwfu wotg';
 
-    $mail->setFrom('brosaskndrx05@gmail.com', 'Trinity Smiles Dental');
+    $mail->setFrom('trinitysmilesdc@gmail.com', 'Trinity Smiles Dental');
     $mail->addReplyTo($row['email'], $row['name']);
     $mail->addAddress($row['email'], $row['name']);
 
