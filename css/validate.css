@@ -1,0 +1,62 @@
+.form-control.is-valid,
+.was-validated .form-control:valid {
+  
+  background-image: none;
+  box-shadow: none !important;
+  border: 1px solid #1fa6dc !important;
+}
+
+.form-select.is-valid,
+.was-validated .form-select:valid {
+  
+  background-image: none;
+  box-shadow: none !important;
+  border: 1px solid #1fa6dc !important;
+}
+
+.select2-container--bootstrap-5.select2-container--focus .select2-selection, .select2-container--bootstrap-5.select2-container--open .select2-selection {
+  box-shadow: none !important;
+  border: 1px solid #1fa6dc !important;
+}
+
+.select2-container--bootstrap-5 .select2-dropdown .select2-search .select2-search__field {
+  box-shadow: none !important;
+  border: 1px solid #1fa6dc !important;
+}
+
+.is-valid + .select2-container--bootstrap-5 .select2-selection, .was-validated select:valid + .select2-container--bootstrap-5 .select2-selection {
+  border-color: #1fa6dc !important;
+}
+
+.is-invalid + .select2-container--bootstrap-5 .select2-selection, .was-validated select:invalid + .select2-container--bootstrap-5 .select2-selection {
+  border-color: #dc3545 !important;
+}
+
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+  
+  background-image: none;
+  box-shadow: none !important;
+  border: 1px solid #dc3545 !important;
+}
+
+.form-select.is-invalid,
+.was-validated .form-select:invalid {
+  
+  background-image: none;
+  box-shadow: none !important;
+  border: 1px solid #dc3545 !important;
+}
+
+.form-select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+}
+
+.form-control:focus {
+  border: 1px solid #1fa6dc;
+}
+.form-select:focus {
+  border: 1px solid #1fa6dc;
+  box-shadow: none !important;
+}
+

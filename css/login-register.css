@@ -1,0 +1,93 @@
+body {
+  background: url("");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.login-page,
+.register-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.login-box,
+.register-box {
+  width: 360px;
+}
+
+@media (max-width: 576px) {  /* This is assuming 576px is your "sm" breakpoint */
+  .login-box,
+  .register-box {
+    width: 90%;
+    margin-top: 0.5rem;
+  }
+}
+
+.login-card-body,
+.register-card-body {
+  padding: 20px;
+  border-top: 0;
+}
+
+.login-box-msg,
+.register-box-msg {
+  padding: 0 20px 20px;
+  margin: 0;
+  text-align: center;
+}
+
+
+button[type="submit"] {
+  background-color: #1fa6dc;
+  border: 1px solid #1fa6dc;
+  color: #fff;
+}
+button[type="submit"]:hover {
+  background-color: #fff !important;
+  color: #1fa6dc !important;
+  border: 1px solid #1fa6dc !important;
+}
+
+button[type="submit"]:focus,
+button[type="submit"]:active {
+  background-color: #fff !important;
+  color: #1fa6dc !important;
+  border: 1px solid #1fa6dc !important;
+}
+
+.form-control input[type="text"]:focus {
+  box-shadow: none;
+  border: 1px solid #1fa6dc;
+}
+
+.form-control .form-select:focus {
+  box-shadow: none;
+  border: 1px solid #1fa6dc;
+}
+
+.form-control input[type="password"]:focus {
+  box-shadow: none;
+  border: 1px solid #1fa6dc;
+}
+.form-control:focus {
+  box-shadow: none;
+  border: 1px solid #1fa6dc;
+}
+
+.link-dark {
+  font-weight: light;
+  transition: all 0.5s;
+}
+
+.link-dark:hover {
+  font-weight: bold;
+  transition: all 0.5s;
+}
+.form-control {
+  padding: 1rem 0.75rem;
+}

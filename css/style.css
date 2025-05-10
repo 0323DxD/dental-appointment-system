@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;               /* width of the entire scrollbar */
+  border-radius: 20px;
+}
+
+body::-webkit-scrollbar-track {
+  background: white;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #1fa6dc;    /* color of the scroll thumb */
+  border-radius: 20px;
+  border: 2px #ffffff solid;
+}
+
+textarea::-webkit-scrollbar {
+  width: 10px;               /* width of the entire scrollbar */
+  border-radius: 20px;
+}
+
+textarea::-webkit-scrollbar-track {
+  background: white;        /* color of the tracking area */
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: #1fa6dc;    /* color of the scroll thumb */
+  border-radius: 20px;
+  border: 2px #ffffff solid;
+}
+
+.navbar-brand img {
+  width: 40px;
+  height: 40px;
+}
+
+
+.text-primary {
+  color: #1fa6dc !important;
+}
+
+
+.navbar-toggler {
+  margin-right: -10px;
+  border: 0;
+  box-shadow: none !important;
+}
+
+.navbar-toggler span {
+  display: block;
+  background-color: white;
+  height: 3px;
+  width: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  left: 0;
+  opacity: 1;
+  transition: all 0.25s ease-out;
+  transform-origin: center left;
+}
+.navbar-toggler span:nth-child(1) {
+  transform: translate(0%, 0%) rotate(0deg);
+  background-color: #1fa6dc;
+}
+
+.navbar-toggler span:nth-child(2) {
+  opacity: 1;
+  background-color: #1fa6dc;
+}
+
+.navbar-toggler span:nth-child(3) {
+  transform: translate(0%, 0%) rotate(0deg);
+  background-color: #1fa6dc;
+}
+
+.navbar-toggler span:nth-child(1) {
+  margin-top: 0.3em;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+  transform: translate(15%, -33%) rotate(45deg);
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+  transform: translate(15%, 33%) rotate(-45deg);
+}
+
+footer {
+  margin-top: auto;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.btn-blue {
+  background-color: #1fa6dc;
+  border: 0;
+}
+
+
+.btn-blue:hover,
+.btn-blue:focus,
+.btn-blue:active {
+  background-color: #1a61a3 !important;
+  border: 0;
+}
+
+.bg-blue {
+  background-color: #1fa6dc;
+}
+
+#about {
+  scroll-margin: 4em;
+}
+
+.bg-gradient-primary {
+  background-color: #1fa6dc;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.accordion-item > .accordion-header .accordion-button  {
+  box-shadow: none;
+  background: none;
+}
+
+.background {
+  position: absolute;
+  display: block;
+  top: 10%;
+  left: 0;
+  z-index: -1;
+  filter: opacity(100%);
+}
+
+html.sr .load-hidden {
+  visibility: hidden;
+}
+.nav-link {
+  color: #1fa6dc;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+}
+.nav-link:hover, .nav-link:active, .nav-link:focus {
+  color: #1a61a3 !important;
+  font-weight: bold;
+}
+.nav-link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 4px;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 0;
+  position: absolute;
+  background: #1a61a3;
+  transition: width 0.3s ease 0s, opacity 0.3s ease 0s;
+  width: 0;
+}
+
+.nav-link:hover:after {
+  width: 100%;
+  opacity: 0.9
+}
+
+.readonly-input {
+  pointer-events: none; /* prevents clicking/focusing */
+}
+
+@media (max-width: 768px) {
+  .nav-link:hover:after {
+    width: 0;
+  }
+}
